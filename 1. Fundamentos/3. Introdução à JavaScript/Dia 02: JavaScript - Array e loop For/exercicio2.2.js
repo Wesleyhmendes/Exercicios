@@ -1,8 +1,11 @@
 let word = 'tryber';
-let result;
+let result = '';
 
 for (let i = word.length -1; i >=0; i -= 1) {
-    result = word[i];
+    let letraInvertida = word[i];
 
-    console.log(result); 
+    result += letraInvertida;
+
+   
 }
+console.log(result); 
