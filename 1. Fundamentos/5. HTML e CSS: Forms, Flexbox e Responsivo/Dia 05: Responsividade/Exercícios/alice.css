@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/* ------Telas Pequenas (600x1024)------ */
+@media screen and (max-width: 600px) {
+    
+.container header h1 {
+    width: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(174, 174, 174);
+    list-style: none;
+}
+
+.aside-one h2 {
+    text-align: center;
+}
+
+.aside-one ul {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.main-content {
+    padding: 20px;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.26);
+}
+
+}
