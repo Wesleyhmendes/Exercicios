@@ -1,5 +1,7 @@
 const removeItem = require('./exercicio1');
 const myFizzBuzz = require('./myFizzBuzz');
+const encode = require('./exercicio3');
+const decode = require('./exercicio3');
 
 describe('A função removeItem()', () => {
     it('recebe um array e retorna uma cópia sem o elemento item, caso ele exista', () => {
@@ -35,5 +37,23 @@ describe('A função myFizzBuzz(num) recebe um número num como parâmetro', () 
 
     it('Caso num não seja um número, a função retorna false', () => {
         expect(myFizzBuzz(String)).toBe(false);
+    })
+})
+
+describe('Para as funções encode e decode, crie os seguintes testes em Jest', () => {
+    it('Teste se encode e decode são funções.', () => {
+        expect(typeof decode).toEqual("function");
+    })
+
+    it('Teste se encode e decode são funções.', () => {
+        expect(typeof encode).toEqual("function");
+    })
+
+    it('Para a função encode, teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4, 5, respectivamente.', () => {
+        expect(encode('a, e, i, o, u')).toBe('a, e, i, o, u');
+    })
+
+    it('Para a função decode, teste se os números 1, 2, 3, 4, 5 são convertidos nas vogais a, e, i, o, u, respectivamente..', () => {
+        expect(decode('1, 2, 3, 4, 5')).toBe('a, e, i, o, u');
     })
 })
