@@ -10,6 +10,35 @@ const newEmployees = (emailEmployee) => {
     }
     return employees;
   };
-console.log(newEmployees(emailEmployee));
+// console.log(newEmployees(emailEmployee));
 
-//Exercício 2 //
+// Sorteador de loteria //
+
+const lotery = (numApostado, callback ) => {
+    const randomNumber = Math.floor(Math.random() * (1 - 5) + 5);
+    return numApostado.find((numApostado) => numApostado === randomNumber);
+};
+// console.log(lotery(4));
+
+// Corretor automático de exame //
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const corretor = (answers, studentAnswers) => {
+    let pontos = 0;
+    studentAnswers.forEach((answer, index) => {
+        if(answer === 'N.A') {
+            return;
+        }
+        if(answer === answers[index]) {
+            pontos += 1;
+        } else {
+            pontos -= 1;
+        }
+    });
+    return pontos;
+};
+
+// console.log(corretor(RIGHT_ANSWERS, STUDENT_ANSWERS));
+
+
