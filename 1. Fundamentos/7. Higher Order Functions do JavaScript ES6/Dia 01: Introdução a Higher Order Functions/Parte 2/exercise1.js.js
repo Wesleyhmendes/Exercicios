@@ -70,6 +70,8 @@ const books = [
         }
         return false;
     };
-console.log(authorBornIn1947(books));
+// console.log(authorBornIn1947(books));
+
+
 
 
