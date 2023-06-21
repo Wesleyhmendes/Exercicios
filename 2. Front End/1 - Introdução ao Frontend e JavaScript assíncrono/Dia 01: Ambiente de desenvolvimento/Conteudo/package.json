@@ -1,3 +1,6 @@
 {
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "nanoid": "^4.0.2"
+  }
 }
