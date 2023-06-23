@@ -1,0 +1,15 @@
+{
+  "description": "",
+  "scripts": {
+    "dev": "vite --open"
+  },
+  "dependencies": {
+    "@trybe/eslint-config-frontend": "^1.11.3",
+    "lint": "eslint ./src",
+    "vite": "^4.3.9"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
