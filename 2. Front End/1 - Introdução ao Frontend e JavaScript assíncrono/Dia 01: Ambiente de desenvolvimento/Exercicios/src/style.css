@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#option {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    height: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: rgb(57, 57, 57);
+    width: 350px;
+    -webkit-box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.54);
+    box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.54);
+}
+
+p {
+    color: white;
+    text-align: center;
+}
